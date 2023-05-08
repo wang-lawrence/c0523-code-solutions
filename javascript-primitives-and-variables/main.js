@@ -10,6 +10,6 @@ console.log('typeof totalPets: ', typeof totalPets);
 const unknown = null
 console.log('value of unknown: ', unknown)
 console.log('typeof unknown: ', typeof unknown);
-const never
+let never
 console.log('value of never: ', never)
 console.log('typeof never: ', typeof never);
