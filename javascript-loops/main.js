@@ -52,7 +52,7 @@ function doubleAll(numbers){
 
 function getKeys(object){
   const keys=[];
-  for (key in object) {
+  for (const key in object) {
     keys.push(key);
   }
   return keys;
@@ -60,7 +60,7 @@ function getKeys(object){
 
 function getValues(object){
   const values = [];
-  for (key in object){
+  for (const key in object){
     values.push(object[key]);
   }
   return values;
