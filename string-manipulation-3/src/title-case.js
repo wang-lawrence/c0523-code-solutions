@@ -38,13 +38,6 @@ function titleCase(title) {
         );
         break;
 
-      // capitalize words of four letters or more
-      // case splitArr[i].length >= 4:
-      //   newArr.push(
-      //     splitArr[i][0].toUpperCase() + splitArr[i].slice(1).toLowerCase()
-      //   );
-      //   break;
-
       // lower case all minor words
       case minorWords.indexOf(splitArr[i].toLowerCase()) !== -1:
         newArr.push(splitArr[i].toLowerCase());
