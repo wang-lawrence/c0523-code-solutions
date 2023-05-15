@@ -8,9 +8,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 <a> tag
 
 - What is an absolute URL?
-an absolute URL uses the full directory to point to the web content
+an absolute URL uses the full directory to point to the web content, it's mostly for external websites
 - What is a relative URL?
-relative URL is relative to the location of the current html file
+relative URL is relative to the location of the current html file, it's mainly used for our own websites
 
 ## Notes
 
