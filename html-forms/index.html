@@ -7,42 +7,43 @@
     <h1>Coding Form!</h1>
 
     <form id = 'coding-form'>
-     <div>Email:</div>
-     <label for="email">
+     <label> Email:
+      <div>
       <input type="email" id="email" name="user_email">
+      </div>
      </label>
 
-     <div>Why is coding cool?</div>
-     <label for="reason">
+
+     <label>Why is coding cool?
+      <div>
       <select id="reason">
         <option value='1'>Select an option</option>
         <option value='2'>Because it's interesting</option>
         <option value='3'>Because it's fun</option>
         <option value='4'>Because it's powerful</option>
       </select>
+      </div>
      </label>
 
-     <p> Favorite Language (choose one) </p>
-      <p>
-        <label for="HTML">
-          <input type="radio" id="HTML" name="language"> HTML
-        </label>
-        <label for="CSS">
-          <input type="radio" id="CSS" name="language"> CSS
-        </label>
-        <label for="JS">
-          <input type="radio" id="JS" name="language"> JavaScript
-        </label>
-      </p>
 
-      <p>Would you like to sign up for more information?</p>
-      <label for="signup">
+
+        <p>Favorite Language (choose one)</p>
+        <p>
+          <label><input type="radio" id="HTML" name="language"> HTML</label>
+          <label><input type="radio" id="CSS" name="language"> CSS</label>
+          <label><input type="radio" id="JS" name="language"> JavaScript</label>
+        </p>
+
+      <label">Would you like to sign up for more information?
+        <p>
         <input type="checkbox" id="signup"> Sign me up!
+        </p>
       </label>
 
-      <div>Comments</div>
-      <label for="comment">
+      <label>Comments
+        <div>
         <textarea cols="30" rows="8" id="comments" placeholder="Tell us your thoughts!"></textarea>
+        </div>
       </label>
       <div><input type="submit" value="Submit" /></div>
     </form>
