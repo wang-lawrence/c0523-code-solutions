@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the names of the individual pieces of a CSS rule?
-selector, curly braces, declarations that take the form of property value pairs
+selector, curly braces, declarations that take the form of property value pairs, the whole thing is called a CSS ruleset
 - In CSS, how do you select elements by their `class` attribute?
 "." followed by the name of the class attribute
 - In CSS, how do you select elements by their tag name?
