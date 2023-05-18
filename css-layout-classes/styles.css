@@ -1,0 +1,30 @@
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.column-fourth {
+  flex-basis: calc(100% /4);
+}
+
+
+img {
+  width: 100%;
+}
+
+.ssb-text {
+  flex-basis: 32%;
+}
+
+.dk-text,
+.mario-text {
+  flex-basis: 60%;
+}
