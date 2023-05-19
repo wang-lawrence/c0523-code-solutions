@@ -97,7 +97,6 @@ function countPoints(dealtCards) {
         }
       }
     }
-    // playerPoints.push(dealtCards[i].player);
     playerPoints.push(points);
   }
   return playerPoints;
