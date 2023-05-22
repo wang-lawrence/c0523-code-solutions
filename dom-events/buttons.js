@@ -27,13 +27,3 @@ function handleDoubleClick(event) {
 const $dblClickButton = document.querySelector('.double-click-button');
 
 $dblClickButton.addEventListener("dblclick", handleDoubleClick);
-
-
-function handleClick2() {
-  console.log('button clicked 2');
-  // console.log(event.target);
-}
-
-// const $clickButton = document.querySelector('.click-button');
-
-$clickButton.addEventListener('click', handleClick2());
