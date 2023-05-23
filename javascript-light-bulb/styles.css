@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.dark-background {
+  height: 100vh;
+  background-color:rgb(17,17,17);
+}
+
+.light-background {
+  height: 100vh;
+  background-color: rgb(254,249,241);
+}
+
+.row {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color:rgb(37,37,37);
+  box-shadow: 0 -10px 5px black;
+}
+
+.light-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color:rgb(250,234,132);
+  box-shadow: 0 0 65px 15px rgb(250,234,132);;
+}
