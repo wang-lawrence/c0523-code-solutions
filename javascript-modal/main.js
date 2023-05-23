@@ -11,7 +11,6 @@ function modalButtonClick (event) {
 function noButtonClick(event) {
   $popup.classList.add('hidden');
   $overlay.classList.add('hidden');
-  console.log('clicked')
 }
 
 $openModalButton.addEventListener('click', modalButtonClick);
