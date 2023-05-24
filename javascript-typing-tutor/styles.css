@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.background-beige {
+  background-color: #B3BFB8;
+}
+
+.row {
+  display: flex;
+}
+
+.quarter-page{
+  width: 100vw;
+  height: 25vh;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.font-kalam {
+  font-family: sans-serif;
+}
+
+.font-bigger {
+  font-size: 3.5vw;
+}
+
+.font-big {
+  font-size: 2.5vw;
+}
+
+.font-normal {
+  font-size: 2vw;
+}
+
+.green {
+  color:green
+}
+
+.red {
+  color:red
+}
+
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 20px;
+}
+
+.reset-button {
+  width: 15vw;
+  height: 5vw;
+  background-color: #3c493f;
+  color: #A2E3C4;
+  box-shadow: 0 15px 30px -5px gray;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.reset-button:hover{
+  background-color: #A2E3C4;
+  color: #3c493f;
+  border: 2px solid #3c493f;
+  cursor: pointer;
+}
+
+.reset-button:hover:focus{
+  margin-top: 4px;
+}
+
+.message {
+  color: #3c493f;
+  letter-spacing: 0.1vw;
+  margin-bottom: 3vh;
+}
+
+span {
+  white-space: pre-wrap;
+  text-align: center;
+  width: 15px;
+}
