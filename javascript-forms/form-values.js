@@ -8,6 +8,7 @@ function stopReload (event) {
   formValues['email'] = $formControls.email.value;
   formValues['message'] = $formControls.message.value;
   console.log(formValues)
+  $form.reset();
 }
 
 $form.addEventListener('submit', stopReload)
