@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Challenge - Four Column Layout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container light-gray-background">
+    <div class="row">
+      <div class="column-full">
+        <h4 class="text-center barlow-font font-bold margin-bottom-0">How It Works</h4>
+      </div>
+    </div>
+    <div class="row padding-side-10pct">
+      <div class="column-fourth margin-side">
+        <img src="images/screen-1.png" alt="screen-1-image">
+      </div>
+      <div class="column-fourth margin-side">
+        <img src="images/screen-2.png" alt="screen-2-image">
+      </div>
+      <div class="column-fourth margin-side">
+        <img src="images/screen-3.png" alt="screen-3-image">
+      </div>
+      <div class="column-fourth margin-side">
+        <img src="images/screen-4.png" alt="screen-4-image">
+      </div>
+    </div>
+    <div class="row padding-side-10pct ">
+      <div class="column-fourth">
+        <div class="row justify-content-center">
+         <img src="images/switch-icon.png" alt="switch" class="width-20pct">
+        </div>
+      </div>
+      <div class="column-fourth">
+        <div class="row justify-content-center">
+          <img src="images/filter-icon.png" alt="filter" class="width-20pct">
+        </div>
+      </div>
+      <div class="column-fourth">
+        <div class="row justify-content-center">
+          <img src="images/slider-icon.png" alt="slider" class="width-20pct">
+        </div>
+      </div>
+      <div class="column-fourth">
+        <div class="row justify-content-center">
+          <img src="images/bars-icon.png" alt="bars" class="width-20pct">
+        </div>
+      </div>
+    </div>
+    <div class="row padding-side-10pct ">
+      <div class="column-fourth text-center barlow-font">
+        <p class="margin-vertical font-bold font-size-medium">App Switching</p>
+        <p class="font-size-small">Toggle all your apps on and off.</p>
+      </div>
+      <div class="column-fourth text-center barlow-font">
+        <p class="margin-vertical font-bold font-size-medium">Trip Filtering</p>
+        <p class="font-size-small">Evaluate your trip requests.</p>
+      </div>
+      <div class="column-fourth text-center barlow-font">
+        <p class="margin-vertical font-bold font-size-medium">Service Filters</p>
+        <p class="font-size-small">Accepts only your ideal trips.</p>
+      </div>
+      <div class="column-fourth text-center barlow-font">
+        <p class="margin-vertical font-bold font-size-medium">Stats + Mileage</p>
+        <p class="font-size-small">Tracks your trips across all apps.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
