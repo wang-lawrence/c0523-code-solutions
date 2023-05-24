@@ -7,8 +7,10 @@ function incrementClickCount(event) {
   clickCount += 1;
 }
 
-function updateClickCountDisplay (event) {
+function updateClickCountDisplay(event) {
+  incrementClickCount(event);
   $clickCount.textContent = 'Clicks: ' + clickCount;
+  changeButtonColor(event);
 }
 
 function changeButtonColor(event) {
@@ -34,6 +36,10 @@ function changeButtonColor(event) {
   }
 }
 
-$hotButton.addEventListener('click', incrementClickCount);
-$hotButton.addEventListener('click', updateClickCountDisplay);
-$hotButton.addEventListener('click', changeButtonColor);
+function updatePageDisplay(event) {
+  incrementClickCount(event);
+  updateClickCountDisplay(event);
+  changeButtonColor(event);
+}
+
+$hotButton.addEventListener('click', updatePageDisplay);
