@@ -13,6 +13,7 @@ viewport
 
 All student notes should be written here.
 
+- When using the mobile device view in inspect, make sure in the meta viewport tag the width is set ot the device width or else the width will set to the default (900px I think), any so any rules impacting below 900px wouldn't happen
 
 How to write `Code Examples` in markdown
 
