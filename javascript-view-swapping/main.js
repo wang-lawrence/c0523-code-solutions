@@ -2,11 +2,6 @@ const $tabContainer = document.querySelector('.tab-container');
 const $tab = document.querySelectorAll('.tab');
 const $view = document.querySelectorAll('.view');
 
-
-console.dir($tabContainer);
-console.log($tab);
-console.log($view);
-
 function activateTab (event) {
 
   const dataView = event.target.getAttribute('data-view');
