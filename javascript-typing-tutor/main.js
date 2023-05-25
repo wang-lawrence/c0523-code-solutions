@@ -5,8 +5,6 @@ const $resetButton = document.querySelector('.reset-button');
 let i = 0;
 let typeCount = 0;
 
-console.log($letter.length)
-
 function checky(event) {
 
 typeCount ++;
