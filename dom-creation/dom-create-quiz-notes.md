@@ -12,6 +12,10 @@ no, it's created but not inserted
 the attribute name and the attribute value
 - What steps do you need to take in order to insert a new element into the page?
 query for the element that we want to insert the new element before/after, then use the appropriate method to insert via .append, .appendChild, .prepend, .after, .before etc...
+1. create element
+2. set attribute or create text content
+3. appendChild
+
 - What is the `textContent` property of an element object for?
 to store the text value of the element object
 - Name two ways to set the `class` attribute of a DOM element.
@@ -19,6 +23,7 @@ to store the text value of the element object
 - What are two advantages of defining a function to do create something (like the work of creating a DOM tree)?
 it's interactive so we can manipulate the tree structure depening on user action
 we can also add or remove attributes and the content of the elements dynamically
+reusability
 
 
 ## Notes
