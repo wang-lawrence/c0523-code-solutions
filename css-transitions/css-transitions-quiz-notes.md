@@ -7,6 +7,8 @@ After completing this exercise, you should be able to discuss or answer the foll
 - The `transition` property is shorthand for which four CSS properties?
 transition-property, transition-duration, transition-timing-function, transitoin-delay
 
+the transition-property is defaulted to 'all' if not specified, which just means all transitional properties are targeted for transitioning
+
 ## Notes
 
 All student notes should be written here.
