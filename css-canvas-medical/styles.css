@@ -148,11 +148,19 @@
   color: rgb(110,110,110);
 }
 
+.blue-text {
+  color: rgb(41,68,100);
+}
+
 .margin-0 {
   margin: 0;
 }
 
 .margin-horizontal-0 {
+  margin: auto 0;
+}
+
+.margin-vertical-auto {
   margin: auto 0;
 }
 
@@ -194,6 +202,10 @@
 
 .margin-top-85px {
   margin-top: 85px;
+}
+
+.margin-top-18pct {
+  margin-top: 18%
 }
 
 .margin-bottom-15px {
@@ -255,6 +267,14 @@ img{
   position: relative;
   z-index: -2;
 }
+
+.background-image-product {
+  background-image: url("images/product/product-header.jpg");
+  background-size:100%;
+  position: relative;
+  z-index: -2;
+}
+
 
 .height-400px {
   height: 480px;
