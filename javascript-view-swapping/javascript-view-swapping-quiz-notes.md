@@ -24,6 +24,12 @@ I would write out the code to turn on the selected tab and turn off the views fo
 All student notes should be written here.
 
 - When two boxes are side by side, which box's border is shown?
+we can play around with hiding the border sides in the inspector to see which one is showing
+
+ - Class vs Data-- attributes
+class is used mainly for styling purposes
+data- attributes are used if we need to change views or grab data in javascript
+
 How to write `Code Examples` in markdown
 
 for JS:
