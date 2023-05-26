@@ -4,8 +4,13 @@ const books = [
   { isbn: 'Hyperion', author: 'Dan Simmons', isbn: '978-0553283686' },
 ];
 
-console.log('JSON stringified books: ', JSON.stringify(books));
-console.log('JSON stringified books type: ', typeof JSON.stringify(books));
+console.log('array of books: ', books);
+console.log('books type: ', typeof books);
+
+const stringifiedBooks = JSON.stringify(books);
+
+console.log('JSON stringified books: ', stringifiedBooks);
+console.log('JSON stringified books type: ', typeof stringifiedBooks);
 
 const studentString = '{"id":675121, "name":"Lawrence"}'
 
