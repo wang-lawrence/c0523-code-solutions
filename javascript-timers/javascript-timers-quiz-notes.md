@@ -18,7 +18,7 @@ timeoutID and intervalID, which identifies the timer created by the setTimeout()
 ## Notes
 
 All student notes should be written here.
-
+- The timeoutID and intervalID are returned before the callback function is called, so they're available to be used in the callback function right away
 
 How to write `Code Examples` in markdown
 
