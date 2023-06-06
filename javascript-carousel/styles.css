@@ -41,7 +41,8 @@ body {
 
 .image {
   flex-basis: 50%;
-  height: 27rem;
+  height: 40vw;
+  max-height: 27rem;
   position: relative;
   object-fit: contain;
 }
