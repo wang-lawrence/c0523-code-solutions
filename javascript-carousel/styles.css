@@ -40,24 +40,27 @@ body {
 }
 
 .image {
-  flex-basis: 60%;
-  height: 35rem;
+  flex-basis: 50%;
+  height: 27rem;
   position: relative;
+  object-fit: contain;
 }
 
 .arrow-right,
 .arrow-left {
-  flex-basis: 20%;
+  flex-basis: 25%;
 }
 
 img {
   width: 100%;
-  transition: all 0.7s ease-out;
+  height: 100%;
+  transition: all 1s ease-out;
+  object-fit: contain;
 
 }
 
 img.scroll-right {
-  width: 0%;
+  width: 5%;
   position: absolute;
   left: 0;
 }
