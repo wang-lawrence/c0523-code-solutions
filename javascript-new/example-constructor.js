@@ -12,5 +12,3 @@ console.log('value of newExample: ', newExample);
 
 const instanceOfCheck = newExample instanceof ExampleConstructor;
 console.log('value of instanceOfCheck: ', instanceOfCheck);
-
-console.log(Object.getPrototypeOf(newExample));
