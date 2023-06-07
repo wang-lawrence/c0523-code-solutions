@@ -13,7 +13,7 @@ XMLHttpRequest
 - What event is fired by `XMLHttpRequest` objects when they are finished loading the data from the server?
 load will fire when data is successfully loaded, but loadend will fire regardless if successful
 - **Bonus Question**: An `XMLHttpRequest` object has an `addEventListener()` method just like DOM elements. How is it possible that they both share this functionality?
-they are both created using the big Object, so they'll both get the .addEventListener() method on the prototype chain
+prototypal inheritance, the method exists on the EventTarget object, so they'll both get the .addEventListener() method on the prototype chain
 
 ## Notes
 
