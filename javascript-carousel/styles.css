@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-bw {
+  justify-content: space-between;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.progress-dots-container {
+  margin-top: 1rem;
+}
+
+.fa-circle {
+  margin: 0 0.5rem;
+}
+
+.image {
+  flex-basis: 50%;
+  height: 40vw;
+  max-height: 27rem;
+  position: relative;
+  object-fit: contain;
+}
+
+.arrow-right,
+.arrow-left {
+  flex-basis: 25%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-out;
+  object-fit: contain;
+
+}
+
+img.scroll-right {
+  width: 5%;
+  position: absolute;
+  left: 0;
+}
