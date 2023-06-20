@@ -14,8 +14,7 @@ const names = [
 
 const evenNums = numbers.filter( e => e % 2 == 0);
 const noD = names
-  .filter((e) => !e.includes('d'))
-  .filter((e) => !e.includes('D'));
+  .filter((e) => !/d/ig.test(e));
 
 console.log('Even numbers:', evenNums);
 console.log('No D', noD)
