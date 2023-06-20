@@ -11,8 +11,8 @@ const v4 = [3, 5, 7, 9];
  * Expected: v1 message logs, v2 message does not.
  */
 
-  v1 ? console.log('v1 is truthy'): null;
-  v2 ? console.log('v2 is truthy'): null;
+  v1 && console.log('v1 is truthy');
+  v2 && console.log('v2 is truthy');
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable.
@@ -22,8 +22,8 @@ const v4 = [3, 5, 7, 9];
  * Expected: `config1 = { value: 'Something' }`, `config2 = 'default-value'`.
  */
 
-const config1 = v1 ? v1 : 'default-value';
-const config2 = v2 ? v2 : 'default-value';
+const config1 = v1 || 'default-value';
+const config2 = v2 || 'default-value';
 console.log('config1 = ', config1);
 console.log('config2 = ', config2);
 
