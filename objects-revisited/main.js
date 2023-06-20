@@ -4,7 +4,7 @@ const business = {
   totalEmployees: 4,
   daysOpen: ['M', 'T', 'W', 'Th', 'F'],
   employees: {
-    'lawrence wang': {
+    'lawrence': {
       position: 'developer',
       daysOfWeekWorking: ['M', 'T', 'W', 'Th']
     },
@@ -30,9 +30,11 @@ function appStart(event) {
   for(const employee in business.employees) {
     business.employees[employee].fullTime = business.employees[employee].daysOfWeekWorking.length >= 5;
   }
-   const y = addEmployees();
-   //object keys only show 4 peopel because the API call is not compete yet, need to add code to delete only when API is complete
-}
+// updated the addEmployees function to delete a random employee after adding the 4 employees
+  addEmployees();
+};
+
+
 
 function addWeekends() {
   const weekends = ['Sa', 'Su']
@@ -59,8 +61,13 @@ function addEmployees() {
       };
       business.totalEmployees++;
     }
+    const potentialEmployeesToCan = Object.keys(business.employees);
+    const randomEmployeeIndex = Math.floor(Math.random() * potentialEmployeesToCan.length);
+    // can the employee
+    deleteEmployee(potentialEmployeesToCan[randomEmployeeIndex]);
   })
   xhr.send();
+
 }
 
 function randomWorkWeekdays () {
@@ -95,7 +102,3 @@ function deleteEmployee(employeeName) {
     business.totalEmployees --;
   }
 }
-
-
-// randomWorkWeekdays();
-// addEmployees();
