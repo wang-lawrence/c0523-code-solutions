@@ -16,7 +16,9 @@ angular, vue
 ## Notes
 
 All student notes should be written here.
-
+- Create react app helps sets up all the packages and boiler plate code needed to start writing an React App
+- it's created by Facebook and has been the gold standard in creating React apps, but it just announced recently that it will no longer come out with new features, though curretny functionalities are still maintained
+- there are other alternatives on the come up such as vite
 
 How to write `Code Examples` in markdown
 
