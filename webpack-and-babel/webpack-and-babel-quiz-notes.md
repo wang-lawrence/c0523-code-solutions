@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is Webpack?
 Webpack is a bundler that is used to bundle all the code from JS files and npm packages into a few files
 - What is the advantage of using Webpack (or a similar bundler)?
-It will remove unused code and may also obfucate the code to enhance security by making it more difficult to decipher
+It will remove unused code (which prevents browser from loading unused code and makes things load faster) and may also obfucate the code to enhance security by making it more difficult to decipher, can also minify the code so it's more compact and faster to parse
 - What is Babel?
 A JavaScript transpiler that is designed to transpile newer versions of JS into older versions
 - What is the advantage of using Babel (or a similar transpiler)?

@@ -2,17 +2,18 @@
 
 // import from a file located at the absolute path `/foo/bar/baz/qux.js`:
 // eslint-disable-next-line import/no-absolute-path
-import f1 from '/foo/bar/baz/qux.js';
+import f1 from '/foo/bar/baz/qux';
+//webpack will automatically look for .js, .jsx, .ts and .tsx files so we don't need to inlcude this extension
 
 // import from a file named `foo.json` located in the current directory:
 import f2 from './foo.json';
 
 // import from a file named `bar.js` located in the parent directory:
-import f3 from '../bar.js';
+import f3 from '../bar';
 
 // import from a file named `index.js` located in a directory named `baz` that
 // is in the current directory:
-import f4 from './baz/index.js';
+import f4 from './baz/index';
 
 // import from a file named `index.js` located in a directory named `baz` that
 // is in the parent directory:
