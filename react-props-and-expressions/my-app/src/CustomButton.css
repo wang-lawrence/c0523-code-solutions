@@ -1,0 +1,23 @@
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue{
+  background-color: rgb(174,217,229);
+  border-radius: 1rem;
+  border-color: dodgerblue;
+  border-style: solid;
+
+}
+
+.red,
+.green,
+.blue {
+  margin-top: 3rem;
+  font-size: 3rem;
+   border-width: 0.4rem;
+}
