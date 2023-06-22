@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is a React component?
 reusable UI elements for your app
 - How do you define a component in React?
-with the function keyword and capitalize the first letter of the function name, then enclose the code block for the component in curly braces
+with the export default function keyword and capitalize the first letter of the function name, then enclose the markup code block for the component in curly braces
 - How is a component "rendered" (made visible on the browser page)?
 by calling the .render() method on the root
 
