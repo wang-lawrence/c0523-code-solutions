@@ -9,7 +9,7 @@ It's a JS library that we can utilize to make web interfaces
 - What is a React component?
 A componenet is a piece of of the user interface that has its own appearnce and logc, in JS they are functions are return markup
 - How do you mount a React app (root component) to the DOM?
-wih root.render()
+with root.render()
 - What are some other popular frontend frameworks?
 angular, vue
 
