@@ -5,9 +5,10 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are _hooks_ in React?
-Hooks are special functions that are only available while React is rendering
+Hooks are special functions that are only available in React, they start with the 'use' word
 - What are the "Rules of Hooks"? (if necessary, re-read the "Pitfall" box in [State](https://react.dev/learn/state-a-components-memory))
-Hooks can only be called at the top level of your components or your own Hooks
+Hooks can only be called at the top level of your components or your own Hooks,
+they must be called on every render
 - What is the purpose of state in React?
 To remember variables between rerenders
 - Why can't we just maintain state in a local variable?
@@ -15,7 +16,7 @@ because local variables don't persist between rerenders
 - What two actions happen when you call a `state setter` function?
 it updates the state and triggers rerendering of the component
 - When does the local `state variable` get updated with the new value?
-after the component rerenders
+after the component rerenders, or technically the next time you call the useState hook again in the component, but practically on the next rerender
 
 ## Notes
 
