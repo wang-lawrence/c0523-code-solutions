@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  height: 2rem;
+}
+
+p {
+  margin: auto 1rem;
+}
