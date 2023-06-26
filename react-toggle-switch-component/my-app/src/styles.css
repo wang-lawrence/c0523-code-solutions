@@ -1,0 +1,61 @@
+.button-container-off {
+  width: 4.5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 3px solid black;
+  position: relative;
+}
+
+.button-container-on {
+  width: 4.5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 3px solid black;
+  position: relative;
+  background-color: rgb(106,167,79);
+}
+
+.toggle-button-off {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 3px solid black;
+  position:absolute;
+  margin-top: -3px;
+  margin-left: -3px;
+  left:0;
+  background-color: white;
+}
+
+.toggle-button-on {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 3px solid black;
+  position:absolute;
+  margin-top: -3px;
+  margin-right: -3px;
+  right:0;
+  background-color: white;
+}
+
+.button-container-off:hover,
+.button-container-on:hover,
+.toggle-button-off:hover,
+.toggle-button-on:hover {
+  cursor: pointer;
+  box-shadow: 2px 7px 9px -4px gray;
+}
+
+.flex-container {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
