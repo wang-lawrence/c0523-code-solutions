@@ -5,7 +5,7 @@ import HotButton from './HotButton';
 function App() {
   return (
     <div className="App">
-      <HotButton></HotButton>
+      <HotButton/>
     </div>
   );
 }
