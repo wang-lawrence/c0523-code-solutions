@@ -11,21 +11,21 @@ React uses JSX to write HTML markup and rendering those components to the UI
 JSX elemtns are used to make DOM calls that create, modify and delete DOM
 A React component returns a JSX element which represents how the DOM should be structured
 - How do you declare the props a React component needs?
-We can declare props inside the paranthesis of a JSX function by adding them inside curly braces separated by commas. To access them inside the component we would use the prop name surrounded by paranthesis
+We can declare props inside the paranthesis of a JSX function by adding them inside curly braces separated by commas (this is the destructured way). You can also just pass in the `props` object, and access the props via props.text, props.count, props.handleClick etc. To access them inside the component we would use the prop name surrounded by paranthesis
 - How do you pass props to a React component?
 inside the component tag, assign the prop value in curly braces to the prop name
 - How do you include JavaScript expressions in JSX?
-with curly braces
+wrap the JS expressoin with curly braces
 - What are React hooks and what are the three "Rules of Hooks"?
-Hooks are special functions that are only available in React, they start with the 'use' word
+Hooks are special functions that are only available in React, they start with the 'use' word and represent the lifecycle event
 Hooks can only be called at the top level of your components or your own Hooks,
-they must be called on every render
+they must be called on every render (no conditonal execution)
 - How do you manage state in a React component?
-with the setter function of the useState hooks
+initialize a value, then in the destuctured array, we have one value that keeps track of state and the setter function that updates it
 - How do you handle events in React?
-with event handlers
+with event handlers on the parent or the child
 - How do you let a parent component know that an event happened?
-event propogation (by adding the event listener to the parent component)
+event propogation (by adding the event listener to the parent component and passing it down to the children as a prop)
 ## Notes
 
 All student notes should be written here.
