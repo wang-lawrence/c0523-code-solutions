@@ -17,9 +17,9 @@ function App() {
 
   return (
   <div className="App">
-    <CustomButton text="Down" count={count} onClick={handleClickDown} />
+    <CustomButton text="Down" onClick={handleClickDown} />
     <ClickCount text = {count} />
-    <CustomButton text="Up" count={count} onClick={handleClickUp} />
+    <CustomButton text="Up" onClick={handleClickUp} />
   </div>);
 };
 
