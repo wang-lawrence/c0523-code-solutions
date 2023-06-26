@@ -1,0 +1,78 @@
+button {
+  margin: 4rem auto 1rem;;
+  font-size: 2rem;
+  border: 3px solid gray;
+  border-radius: 15px;
+  padding: 0.8rem 1.5rem;
+  font-family: 'Lilita One', sans-serif
+}
+
+button:hover{
+  cursor:pointer;
+}
+
+.whiteText {
+  color: white;
+}
+
+.blackText {
+  color: black;
+}
+
+.indigoBg {
+  background-color: rgb(53,28,116);
+}
+
+.indigoBg:hover {
+  background-color: rgb(53,28,116);
+  box-shadow: 1px 7px 10px -5px rgb(53,28,116);;
+}
+
+.purpleBg {
+  background-color: rgb(103,78,167);
+}
+
+.purpleBg:hover {
+  background-color: rgb(103,78,167);
+  box-shadow: 1px 7px 10px -5px rgb(103,78,167);
+}
+
+.pinkBg {
+  background-color: rgb(224,102,102);
+}
+
+.pinkBg:hover {
+  background-color: rgb(224,102,102);
+  box-shadow: 1px 7px 10px -5px rgb(224,102,102);
+}
+
+.orangeBg {
+  background-color: rgb(246,178,106);
+}
+
+.orangeBg:hover {
+  background-color: rgb(246,178,106);
+  box-shadow: 1px 7px 10px -5px rgb(246,178,106);
+}
+
+.yellowBg {
+  background-color: rgb(255,255,0);
+}
+
+.yellowBg:hover {
+  background-color: rgb(255,255,0);
+  box-shadow: 1px 7px 10px -5px rgb(255,255,0);
+}
+
+.whiteBg {
+  background-color: white;
+}
+
+.whiteBg:hover {
+  background-color: white;
+  box-shadow: 1px 7px 10px -5px black;
+}
+
+p {
+  font-family: 'Lilita One', sans-serif;
+}
