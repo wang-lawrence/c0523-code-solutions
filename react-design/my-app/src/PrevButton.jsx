@@ -1,5 +1,5 @@
 export default function PrevButton({ onClick }) {
   return (<div>
-    <button>Prev</button>
+    <button onClick = {onClick}>Prev</button>
   </div>)
 }
