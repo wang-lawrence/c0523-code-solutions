@@ -4,9 +4,9 @@ export default function Indicators({ maxNumButton, currentIndex, onClick }) {
     const buttons = [];
     for(let i = 0; i < maxNumButton; i++) {
       if (i === currentIndex) {
-        buttons.push(<button className="blue-bg" key={i} onClick = {onClick}>{i}</button>);
+        buttons.push(<button className="blue-bg" key={i} onClick={e => onClick(i)}>{i}</button>);
       } else {
-        buttons.push(<button key={i} onClick = {onClick}>{i}</button>);
+        buttons.push(<button key={i} onClick={e => onClick(i)}>{i}</button>);
       }
 
      }
