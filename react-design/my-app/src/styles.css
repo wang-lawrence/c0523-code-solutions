@@ -15,7 +15,7 @@ button {
 }
 
 button:hover {
-  background-color: #1A96DA;
+  background-color: #71b2d5;
   cursor: pointer;
 }
 
@@ -29,4 +29,8 @@ button:active {
 
 h3 {
   margin-bottom: 0.3rem;
+}
+
+.blue-bg {
+  background-color: #71b2d5;;
 }
