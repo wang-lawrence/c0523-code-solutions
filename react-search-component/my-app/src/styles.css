@@ -1,0 +1,36 @@
+input {
+  width: 80%;
+  border: none;
+}
+
+input:focus{
+  outline:none;
+}
+
+i {
+  width: 10%;
+}
+
+.container {
+  padding: 0.5rem 0 0 0.5rem;
+  margin: 0.5rem 0 0 0.5rem;
+  width: 30rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.searchBar {
+  display:flex;
+  padding: 0.2rem 0 0.2rem 0.5rem;
+  width: 20rem;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+li {
+  font-size: 0.8rem;
+}
+
+.no-bullet {
+  list-style: none;
+}
