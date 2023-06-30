@@ -7,7 +7,7 @@ import { useState } from 'react';
  * @returns {Object}
  */
 export default function AppDrawer({ items, onClickPage }) {
-  const [toggleMenu, setToggleMenu] = useState(true);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   function handleToggleMenu() {
     setToggleMenu(!toggleMenu);
