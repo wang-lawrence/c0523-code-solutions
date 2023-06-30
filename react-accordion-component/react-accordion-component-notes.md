@@ -3,7 +3,7 @@
 ## Notes
 
 All student notes should be written here.
-
+- There is a html tag called `detail` that will generate an accordion, the styling may be more limited but it's better for accessibility
 
 How to write `Code Examples` in markdown
 
