@@ -1,0 +1,500 @@
+   86  git switch main
+   87  git branch react-props-and-expressions
+   88  git switch props-and-expressions
+   89  git switch react-props-and-expressions
+   90  cd react-props-and-expressions
+   91  npx create-react-app my-app
+   92  cd my-app
+   93  npx start
+   94  npm start
+   95  cd ..
+   96  cd ..
+   97  git add react-props-and-expressions
+   98  git commit -m "react-props-and-expressions - Lawrence Wang"
+   99  git push origin main react-props-and-expressions
+  100  cd react-props-and-expressions
+  101  cd my-app
+  102  npm start
+  103  cd ..
+  104  cd ..
+  105  git add react-props-and-expressions
+  106  git commit -m "put custom button component it its own file, removed brackets from the string props argument"
+  107  git push origin react-props-and-expressions
+  108  cd react-props-and-expressions
+  109  cd my-app
+  110  npm start
+  111  npm start
+  112  cd  ..
+  113  cd ..
+  114  git switch main
+  115  git pull origin main
+  116  git branch react-events
+  117  git git switch react-events
+  118  git switch react-events
+  119  cd react-events
+  120  npx create-react-app my-app
+  121  cd my-app
+  122  npm start
+  123  cd ..
+  124  cd ..
+  125  git add react-events
+  126  git commit -m "react-event - Lawrence Wang"
+  127  git push origin react-events
+  128  git add react-events
+  129  git commit -m "deleted old code"
+  130  git push origin react-events
+  131  git switch main
+  132  git pull origin main
+  133  git branch react-state
+  134  git switch react-state
+  135  npx create-react-app my-app
+  136  cd react-state
+  137  npx create-react-app my-app
+  138  npm start
+  139  npm start
+  140  cd my-app
+  141  npm start
+  142  cd ..
+  143  cd ..
+  144  git add react-state
+  145  git commit -m "react-state - Lawrence Wang"
+  146  git push origin react-state
+  147  git switch react-events
+  148  git switch react-state
+  149  git add react-state
+  150  git commit -m " revsied notes"
+  151  git push origin react-state
+  152  git switch main
+  153  git branch react-refresher
+  154  git switch react-refresher
+  155  cd react-refresher
+  156  npx create-react-app my-app
+  157  cd my-app
+  158  npm start
+  159  cd ..
+  160  cd ..
+  161  git add react-refresher
+  162  git commit -m "react-refresher - Lawrence Wang"
+  163  git push origin react-refresher
+  164  git switch webpack-and-babel
+  165  git add webpack-and-babel
+  166  git commit -m "removed /index from directory since babel will automatically look for it"
+  167  git push orign webpack-and-babel
+  168  git push origin webpack-and-babel
+  169  git switch react-props-and-expressoins
+  170  git switch react-props-and-expressions
+  171  git switch origin
+  172  git switch main
+  173  git pull origin main
+  174  git switch react-refresher
+  175  cd react-refresher/my-app
+  176  npm start
+  177  npm start
+  178  cd ..
+  179  cd.. 
+  180  cd ..
+  181  git add react-refresher
+  182  git commit -m "removed `count` parameter from CustomButton and removed `count` properties in the <CustomButton> JSX in the App componenet, count was unnecessary"
+  183  git push origin react-refresher
+  184  git switch main
+  185  git pull origin main
+  186  git switch react-refresher
+  187  git add react-refresher
+  188  git commit -m "revise notes"
+  189  git push origin react-refresher
+  190  git switch main
+  191  git pull origin main
+  192  git branch react-hot-button-component
+  193  git switch react-hot-button-component
+  194  npx create-react-app my-app
+  195  cd react-hot-button-component
+  196  npx create-react-app my-app
+  197  cd my-app
+  198  npm start
+  199  cd ..
+  200  cd ..
+  201  git add react-hot-button-component
+  202  git commit -m "react-hot-button-component - Lawrence Wang"
+  203  git push origin react-hot-button-component
+  204  git switch main
+  205  git pull origin main
+  206  git branch react-toggle-switch-component
+  207  git switch react-toggle-switch-component
+  208  npx create-react-app my-app
+  209  cd react-toggle-switch-component
+  210  npx create-react-app my-app
+  211  cd my-app
+  212  npm start
+  213  cd ..
+  214  cd ..
+  215  git add react-toggle-switch-component
+  216  git commit -m "react-toggle-switch-component - Lawrence Wang"
+  217  git push origin react-toggle-switch-component
+  218  git switch react-hot-button-component
+  219  cd react-hot-button-component
+  220  cd my-app
+  221  npm start
+  222  cd ..
+  223  cd ..
+  224  git add react-hot-button-component
+  225  git commit -m "make HotButton a self-closing tag, added text color to the colorBg CSS selector and got rid of colorText class, out switch statements inside an event handler function"
+  226  git push origin react-hot-button-component
+  227  git switch main
+  228  git branch react-rendering-lists
+  229  git switch 
+  230  git switch react-rendering-lists
+  231  cd react-rendering-lists
+  232  npx create-react-app my-app
+  233  cd my-app
+  234  npm start
+  235  cd ..
+  236  cd ..
+  237  git add react-rendering-lists
+  238  git commit -m "react-rendering-lists - Lawrence Wang"
+  239  git push origin react-rendering-lists
+  240  cd react-rendering-lists
+  241  cd my-app
+  242  npm start
+  243  cd ..
+  244  cd ..
+  245  git branch react-form-controls
+  246  giti switch react-form-controls
+  247  git switch react-form-controls
+  248  cd react-form-controls
+  249  npx create-react-app my-app
+  250  npm start
+  251  cd my-app
+  252  npm start
+  253  cd ..
+  254  cd ..
+  255  git add react-form-control
+  256  git commit -m "react-form-control - Lawrence Wang"
+  257  git commit -m "react-form-controls - Lawrence Wang"
+  258  git add react-form-controls
+  259  git commit -m "react-form-controls - Lawrence Wang"
+  260  git push origin react-form-controls
+  261  git switch main
+  262  git pull origin main
+  263  npm install -g typescript
+  264  npm init --yes
+  265  npm install typescript
+  266  npm uninstall -g typescript
+  267  npm uninstall typescript
+  268  git branch react-validated-input-component
+  269  git switch react-validated-input-component
+  270  npx create-react-app my-app
+  271  cd react-validated-input-component
+  272  npx create-react-app my-app
+  273  cd my-app
+  274  npm start
+  275  npm install -g typescript
+  276  npm install typescript
+  277  npm start
+  278  npm start
+  279  cd ..
+  280  cd ..
+  281  git add react-validated-input-component
+  282  git commit -m "react-validated-input-component"
+  283  git push origin react-validated-input-component
+  284  git switch react-form-controls
+  285  git add react-form-controls
+  286  git commit -m "revise notes"
+  287  git push origin react-form-controls
+  288  git switch main
+  289  git pull origin main
+  290  git branch react-design
+  291  gi switch react-design
+  292  git switch react-design
+  293  cd react-design
+  294  npx create-react-app my-app
+  295  cd my-app
+  296  npm start
+  297  cd ..
+  298  cd ..
+  299  git add react-design
+  300  git commit -m "react-design-phase-1 - Lawrence Wang"
+  301  git push origin react-design
+  302  cd react-design
+  303  cd my-app
+  304  npm start
+  305  npm start
+  306  cd ..
+  307  cd ..
+  308  git add react-design
+  309  git commit -m "react-design-phase-2 - Lawrence Wang"
+  310  git push origin react-design
+  311  cd react-design
+  312  cd my-app
+  313  npm start
+  314  cd ..
+  315  cd ..
+  316  git add react-design
+  317  git commit -m "react-design-phase-3 - Lawrence Wang"
+  318  git add react-design
+  319  git commit -m "react-design-phase-3 - Lawrence Wang"
+  320  git push origin react-design
+  321  cd react-design
+  322  cd my-app
+  323  npm start
+  324  cd ..
+  325  cd ..
+  326  git add react-design
+  327  git commit -m "revised handleClickIndicators function in the RoatatingBanner component and the onClick callback function in the Indicators component"
+  328  git push origin react-design
+  329  git swtich react-validated-input-component
+  330  git switch react-validated-input-component
+  331  cd react-validated-input-component
+  332  cd my-app
+  333  npm start
+  334  git add react-validated-input-component
+  335  cd ..
+  336  cd ..
+  337  git add react-validated-input-component
+  338  git commit -m "used state to track password instead of display message and styling marke, also added initalAction state to only display messages and marker once user has interacted with the form"
+  339  git push origin react-validated-input-component
+  340  git switch main
+  341  git pull origin main
+  342  git switch react-design
+  343  git add react-design
+  344  git add react-design
+  345  git commit -m "added notes" 
+  346  git push origin react-design
+  347  git switch main
+  348  git pull origin main
+  349  git branch react-search-component
+  350  git switch react-search-component
+  351  cd react-search-componenet
+  352  cd react-search-component
+  353  npx create-react-app my-app
+  354  cd my-app
+  355  npm start
+  356  cd ..
+  357  cd ..
+  358  git add react-search-component
+  359  git commmit -m "reach-search-component - Lawrence Wang"
+  360  git commit -m "reach-search-component - Lawrence Wang"
+  361  git push origin react-search-compnent
+  362  git push origin react-search-component
+  363  git switch main
+  364  git branch react-accordion-component
+  365  git switch react-accordion-component
+  366  cd react-accordion-component
+  367  npx create-react-app my-app
+  368  cd my-app
+  369  npm start
+  370  npm start
+  371  cd ..
+  372  cd ..
+  373  git add react-accordion-component
+  374  git commit -m "react-accordion-component - Lawrence Wang"
+  375  git push origin react-accordion-component
+  376  git switch main
+  377  git pull origin main
+  378  git branch react-app-drawer-component
+  379  git switch react-app-drawer-component
+  380  cd react-app-drawer-component
+  381  npx create-react-app my-app
+  382  cd my-app
+  383  npm start
+  384  cd ..
+  385  npm install react-icons
+  386  cd my-app
+  387  npm start
+  388  npm start
+  389  cd ..
+  390  cd ..
+  391  git add react-app-drawer-component
+  392  git commit -m "react-app-drawer-component - Lawrence Wang"
+  393  git push origin react-app-drawer-component
+  394  cd react-app-drawer-component
+  395  cd my-app
+  396  npm start
+  397  npm start
+  398  cd ..
+  399  cd ..
+  400  git switch react-search-component
+  401  git switch react-search-components
+  402  git switch react-search-component
+  403  git add react-app-drawer-component
+  404  git commit -m "add addtiional files"
+  405  git push origin react-app-drawer-component
+  406  git switch react-search-component
+  407  git switch react-accordion-component
+  408  git add react-accordion-component
+  409  git commit -m "added notes"
+  410  git push origin react-accordion-component
+  411  git switch main
+  412  git pull origin main
+  413  git switch react-accordion-component
+  414  tsc -v
+  415  cd react-props-and-expressions
+  416  tsc -v
+  417  cd ..
+  418  cd react-refresher
+  419  tsc -v
+  420  cd ..
+  421  cd react-rendering-lists
+  422  tsc -v
+  423  cd ..
+  424  cd react-search-component
+  425  tsc -v
+  426  cd ..
+  427  cd react-state
+  428  tsc -v
+  429  cd ..
+  430  cd react-toggle-switch-component
+  431  tsc -v
+  432  cd ..
+  433  cd react-validated-input-component
+  434  tsc -v
+  435  cd ..
+  436  cd react-components
+  437  tsc -v
+  438  cd ..
+  439  cd react-design
+  440  tsc -v
+  441  cd ..
+  442  cd react-events
+  443  tsc -v
+  444  cd ..
+  445  cd react-form-controls
+  446  tsc -v
+  447  cd ..
+  448  cd react-hot-button-components
+  449  cd react-hot-button-component
+  450  tsc -v
+  451  cd ..
+  452  cd react-intro
+  453  tsc -v
+  454  cd react-jsx
+  455  cd react-intro
+  456  tsc -v
+  457  cd ..
+  458  cd react-refresher
+  459  tsc -v
+  460  cd ..
+  461  cd -react-validated-input-component
+  462  cd react-validated-input-component
+  463  tsc -v
+  464  switch react-validated-input-component
+  465  git switch react-validated-input-component
+  466  tsc -v
+  467  $tsc -v
+  468  tsc --init
+  469  cd my-app
+  470  tsc -v
+  471  $ tsc -v
+  472  $tsc -v
+  473  npm uninstall typescript
+  474  git switch main
+  475  git branch react-props-and-expressions
+  476  git branch react-props-and-expressions2
+  477  git switch react-props-and-expressoins2
+  478  git switch react-props-and-expressions2
+  479  cd react-props-and-expressions2
+  480  npx create-react-app my-app --template typescript
+  481  cd my-app
+  482  cd .. 
+  483  cd..
+  484  cd
+  485  .
+  486  q
+  487  workspaces
+  488  cd workspaces
+  489  cd .
+  490  cd ..
+  491  ls
+  492  cd dev
+  493  cd dev
+  494  git switch main
+  495  cd /workspaces/c0523-code-solutions
+  496  git switch main
+  497  git delete branch react-props-and-expressoni2
+  498  git react-props-and-expressions2 delete
+  499  git react-props-and-expressions2 --delete
+  500  git branch -d react-props-and-expressions2
+  501  git branch command-line-basics
+  502  git switch command-line-basics
+  503  cd command-line-basics
+  504  man man
+  505  man man1
+  506  man man(1)
+  507  man man 1
+  508  man man
+  509  man man 6
+  510  man 6
+  511  man(6)
+  512  man cat
+  513  man man
+  514  man cat
+  515  man cat
+  516  cat laziness.txt
+  517  cat impatient.txt
+  518  cat impatience.txt
+  519  cat hubris.txt
+  520  cat laziness.txt impatience.txt hubris.txt
+  521  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  522  cat three-virtues.txt
+  523  man ls
+  524  man games
+  525  man Games
+  526  man ls
+  527  ls 
+  528  ls /lfz-staff
+  529  ls ./lfz-staff
+  530  ls lfz-staff/
+  531  ls -a lfz-staff/
+  532  ls -F lfz-staff/
+  533  man ls
+  534  ls -aF lfz-staff/
+  535  man ls
+  536  ls
+  537  ls -a
+  538  ls -F
+  539  man ls
+  540  ls -aF lfz-staff > lfz-staff/contents.txt
+  541  cat /lfz-staff/contents.txt
+  542  cat lfz-staff/contents.txt
+  543  ls -a
+  544  ls -F
+  545  ls -a lfz-staff/
+  546  ls -F lfz-staff/
+  547  man pwd
+  548  pwd
+  549  pwd > i-was-there.txt
+  550  ls
+  551  cat i-was-there.txt
+  552  man echo
+  553  echo 'Hello, World!'
+  554  echo 'Hello, World!' > hello.txt
+  555  ls
+  556  cat hello.txt
+  557  man touch
+  558  man touch
+  559  touch tag-youre-it.txt
+  560  touch snoot/boop.txt
+  561  ls snoot/
+  562  ls -a snoot/
+  563  man mkdir
+  564  mkdir parent
+  565  ls parent/
+  566  mkdir -p parent/child/grandchild
+  567  touch parent/child/grandchild/.gitkeep
+  568  ls -a parent/child/grandchild
+  569  man mv
+  570  man mv
+  571  mv pokiemans pokemon
+  572  ls
+  573  man rm
+  574  rm lol.txt
+  575  ls
+  576  rm -r kill-me/
+  577  ls
+  578  man cp
+  579  cp and-then.txt no-and-then.txt
+  580  ls
+  581  cat and-then.txt
+  582  cat no-and-then.txt
+  583  man history
+  584  history
+  585  history > command-history.txt
