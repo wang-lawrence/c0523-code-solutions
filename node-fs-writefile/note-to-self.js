@@ -4,9 +4,9 @@ const note = process.argv[2];
 
 async function createNoteToSelf(text) {
   try {
-    await writeFile('./note.txt', text + '\n');
+    await writeFile('note.txt', text + '\n');
   } catch (error) {
-    console.log('failed to write file: ', error.message);
+    console.log('failed to write file: ', error);
   }
 }
 
