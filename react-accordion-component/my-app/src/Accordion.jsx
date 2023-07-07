@@ -1,34 +1,30 @@
 import './styles.css'
 import { useState } from 'react'
 
-export default function Accordiion({data}) {
+export default function Accordion({data}) {
   const [id, setId] = useState(data[0].id);
-  const [showDesc, setShowDesc] = useState(true);
 
   function handleToggle(selId) {
     if (selId === id) {
-      setShowDesc(!showDesc)
+      setId(undefined);
     } else {
       setId(selId);
-      setShowDesc(true);
     }
   }
 
-  const accordion = data.map(topic => {
-    return id === topic.id && showDesc ? (
-      <div>
-        <Header headerText={topic.header} keyId={topic.id} onToggle={handleToggle}/>
-        <Description descText={topic.description} />
-      </div>
-    ) : (
-      <div>
-        <Header headerText={topic.header} keyId={topic.id} onToggle={handleToggle}/>
-      </div>
+  const accordion= data.map(topic => {
+    return (
+    <>
+      <Header headerText={topic.header} keyId={topic.id} onToggle={handleToggle}/>
+      {id === topic.id && <Description keyId={topic.id} descText={topic.description} />}
+    </>
     );
-    }
-  )
+  });
+
   return (
-    <>{accordion}</>
+    <>
+    {accordion}
+    </>
   )
 }
 
@@ -37,7 +33,7 @@ function Header({headerText, keyId, onToggle}) {
     <header
       key={keyId}
       id={keyId}
-      onClick={e => onToggle(+e.target.getAttribute('id'))}>
+      onClick={e => onToggle(keyId)}>
       {headerText}
     </header>
   );

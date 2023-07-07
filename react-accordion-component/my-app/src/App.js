@@ -1,4 +1,4 @@
-import Accordiion from "./Accordion";
+import Accordion from "./Accordion";
 
 const data = [
   {
@@ -42,7 +42,7 @@ const data = [
 function App() {
   return (
     <div className="App">
-      <Accordiion data={data} />
+      <Accordion data={data} />
     </div>
   );
 }
