@@ -7,24 +7,24 @@ import { useState } from 'react';
  * @returns {Object}
  */
 export default function AppDrawer({ items, onClickPage }) {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [menuIsOpen, setmenuIsOpen] = useState(false);
 
-  function handleToggleMenu() {
-    setToggleMenu(!toggleMenu);
+  function handlemenuIsOpen() {
+    setmenuIsOpen(!menuIsOpen);
   }
 
   function handleMenuSelect(text) {
-    setToggleMenu(!toggleMenu);
+    setmenuIsOpen(!menuIsOpen);
     onClickPage(text);
   }
 
   return (
     <div>
-      <HamburgerMenu onOpenMenu={handleToggleMenu} />
-      {toggleMenu && <Overlay onCloseMenu={handleToggleMenu} />}
+      <HamburgerMenu onOpenMenu={handlemenuIsOpen} />
+      {menuIsOpen && <Overlay onCloseMenu={handlemenuIsOpen} />}
       <FullMenu
         items={items}
-        translateX={toggleMenu ? 'translateX(0)' : 'translateX(-14.5rem)'}
+        menuIsOpen={menuIsOpen}
         onCloseMenu={handleMenuSelect}
       />
     </div>
@@ -45,7 +45,7 @@ function Overlay({onCloseMenu}) {
   return <div className="overlay" onClick={onCloseMenu}></div>;
 }
 
-function FullMenu({ items, translateX, onCloseMenu }) {
+function FullMenu({ items, menuIsOpen, onCloseMenu }) {
   const menuItems = items.map((item) => (
     <p key={item}>
       <span onClick={() => onCloseMenu(item)}>{item}</span>
@@ -53,7 +53,7 @@ function FullMenu({ items, translateX, onCloseMenu }) {
   ))
 
   return (
-    <div className="fullMenu" style={{ transform: translateX }}>
+    <div className="fullMenu" style={{ transform: menuIsOpen ? 'translateX(0)' : 'translateX(-14.5rem)' }}>
       {menuItems}
     </div>
   );

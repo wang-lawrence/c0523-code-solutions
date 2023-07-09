@@ -1,7 +1,7 @@
 import MainPage from "./MainPage";
 import './styles.css';
 
-const headings= ['Menu', 'About', 'Get Started', 'Sign In', 'Contact Us']
+const headings = ['Menu', 'About', 'Get Started', 'Sign In', 'Contact Us']
 
 function App() {
   return (
