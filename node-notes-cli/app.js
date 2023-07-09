@@ -20,7 +20,7 @@ async function app(operation, idOrContent, content) {
         await update(idOrContent, content);
         break;
       default:
-        console.log('Invalid operation, only read/update/create/delete are accepted');
+        throw Error('Invalid operation, only read/update/create/delete are accepted');
     }
   } catch(error) {
     console.log('Error handling file: ', error);
@@ -28,7 +28,7 @@ async function app(operation, idOrContent, content) {
 }
 
 async function read() {
-    const data = JSON.parse(await readFile('data.json'));
+    const data = await readData();
     const displayData =[]
     for (const key in data.notes) {
       displayData.push(`${key}: ${data.notes[key]}`)
@@ -37,31 +37,40 @@ async function read() {
 }
 
 async function create(text) {
-    const data = JSON.parse(await readFile('data.json'));
-    data.notes[data.nextId.toString()] = text;
+    const data = await readData();
+    data.notes[data.nextId] = text;
     data.nextId++;
-    const jsonData = JSON.stringify(data, null, 2);
-    await writeFile('data.json', jsonData);
+    await writeData(data);
 }
 
 async function deleteId(id) {
-    const data = JSON.parse(await readFile('data.json'));
+    const data = await readData();
     if (data.notes[id]) {
       delete data.notes[id]
+      console.log(`ID ${id} deleted!`);
     } else {
-      console.log(`ID ${id} does not exist`);
+      throw Error(`ID ${id} does not exist`);
     };
-    const jsonData = JSON.stringify(data, null, 2);
-    await writeFile('data.json', jsonData);
+    await writeData(data);
 }
 
 async function update(id, text) {
-    const data = JSON.parse(await readFile('data.json'));
+    const data = await readData();
     if (data.notes[id]) {
       data.notes[id] = text;
+      console.log(`ID ${id} updated!`);
     } else {
-      console.log(`ID ${id} does not exist`);
+      // console.log(`ID ${id} does not exist`);
+      throw Error(`ID ${id} does not exist`);
     }
-    const jsonData = JSON.stringify(data, null, 2);
-    await writeFile('data.json', jsonData);
+    await writeData(data);
+}
+
+async function readData() {
+  return JSON.parse(await readFile('data.json'));
+}
+
+async function writeData(data) {
+  const jsonData = JSON.stringify(data, null, 2);
+  await writeFile('data.json', jsonData);
 }
