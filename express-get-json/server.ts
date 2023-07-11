@@ -1,5 +1,4 @@
-import express from "express";
-
+import express from 'express';
 
 interface Person {
   id: number;
@@ -8,13 +7,9 @@ interface Person {
   score: number;
 }
 
-interface grades {
-  12: Person,
-  47: Person,
-  273: Person
-}
+type Grades = Record<number, Person>;
 
-const grades = {
+const grades: Grades = {
   12: {
     id: 12,
     name: 'Tim Berners-Lee',
@@ -35,14 +30,13 @@ const grades = {
   },
 };
 
-const gradesArray: object[] = [];
-for (const grade in grades) {
-  gradesArray.push(grades[grade]);
-}
-
 const app = express();
 
-app.listen(8080, () => console.log('Listening on Port 8080'))
+app.listen(8080, () => console.log('Listening on Port 8080'));
 app.get('/api/grades', (req, res) => {
-    res.json(gradesArray);
+  const gradesArray: Person[] = [];
+  for (const grade in grades) {
+    gradesArray.push(grades[grade]);
+  }
+  res.json(gradesArray);
 });
