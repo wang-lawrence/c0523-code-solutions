@@ -17,11 +17,10 @@ type Grades = {
 
 const grades: Grades = {};
 
-const parsedJSON = express.json();
-app.use(parsedJSON);
+app.use(express.json());
 
 app.get('/api/grades', (req, res) => {
-  const gradesArray: object[] = [];
+  const gradesArray: Person[] = [];
   for (const grade in grades) {
     gradesArray.push(grades[grade]);
   }
@@ -29,7 +28,11 @@ app.get('/api/grades', (req, res) => {
 });
 
 app.post('/api/grades', (req, res) => {
-  const newData = { id: nextId, ...req.body };
+  const newData = req.body;
+  if (!newData.name || !newData.course || !newData.score) {
+    res.status(400).send('Incomplete request');
+    return;
+  }
   grades[nextId] = newData;
   nextId++;
   res.status(201).send(newData);
