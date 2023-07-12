@@ -7,10 +7,14 @@ app.use(express.json());
 
 app.get('/api/notes', async (req, res) => {
   try {
-    const notesArray = await read();
+    const notesData = await readData();
+    const notesArray = [];
+    for (const key in notesData.notes) {
+      notesArray.push(notesData.notes[key]);
+    }
     res.status(200).json(notesArray);
   } catch (error) {
-    res.status(404).json({ error: `${error.message}` });
+    res.status(404).json({ error: `${(error as Error).message}` });
   }
 });
 
@@ -28,7 +32,7 @@ app.get('/api/notes/:id', async (req, res) => {
     }
     res.status(200).json(notes[requestId]);
   } catch (error) {
-    res.status(404).json({ error: `${error.message}` });
+    res.status(404).json({ error: `${(error as Error).message}` });
   }
 });
 
@@ -37,21 +41,17 @@ app.post('/api/notes', async (req, res) => {
     let { nextId, notes } = await readData();
     const { content } = req.body;
     if (!content) {
-      res.status(400).send({ error: 'content is a required field' });
+      res.status(400).json({ error: 'content is a required field' });
       return;
     }
-    try {
-      const newNote = { id: nextId, content };
-      notes[nextId] = newNote;
-      nextId++;
-      await writeData({ nextId, notes });
-      res.status(201).json(newNote);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'An unexpected error occurred.' });
-    }
+    const newNote = { id: nextId, content };
+    notes[nextId] = newNote;
+    nextId++;
+    await writeData({ nextId, notes });
+    res.status(201).json(newNote);
   } catch (error) {
-    res.status(404).json({ error: `${error.message}` });
+    console.error(error);
+    res.status(500).json({ error: 'An unexpected error occurred.' });
   }
 });
 
@@ -67,16 +67,12 @@ app.delete('/api/notes/:id', async (req, res) => {
       res.status(404).json({ error: `ID ${deleteId} not in notes` });
       return;
     }
-    try {
-      delete notes[deleteId];
-      await writeData({ nextId, notes });
-      res.sendStatus(204);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'An unexpected error occurred.' });
-    }
+    delete notes[deleteId];
+    await writeData({ nextId, notes });
+    res.sendStatus(204);
   } catch (error) {
-    res.status(404).json({ error: `${error.message}` });
+    console.error(error);
+    res.status(500).json({ error: 'An unexpected error occurred.' });
   }
 });
 
@@ -86,40 +82,27 @@ app.put('/api/notes/:id', async (req, res) => {
     const updateId = Number(req.params.id);
     const { content } = req.body;
     if (updateId < 0) {
-      res.status(400).send({ error: 'ID needs to be positive' });
+      res.status(400).json({ error: 'ID needs to be positive' });
       return;
     }
     if (!content) {
-      res.status(400).send({ error: 'Content is a required field' });
+      res.status(400).json({ error: 'Content is a required field' });
       return;
     }
     if (!notesData.notes[updateId]) {
-      res.status(404).send({ error: `ID ${updateId} is not found in notes` });
+      res.status(404).json({ error: `ID ${updateId} is not found in notes` });
       return;
     }
-    try {
-      notesData.notes[updateId].content = content;
-      await writeData(notesData);
-      res.status(200).json(notesData.notes[updateId]);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'An unexpected error occurred.' });
-    }
+    notesData.notes[updateId].content = content;
+    await writeData(notesData);
+    res.status(200).json(notesData.notes[updateId]);
   } catch (error) {
-    res.status(404).json({ error: `${error.message}` });
+    console.error(error);
+    res.status(500).json({ error: 'An unexpected error occurred.' });
   }
 });
 
 app.listen(8080, () => console.log('Listening on port 8080!'));
-
-async function read() {
-  const data = await readData();
-  const displayData = [];
-  for (const key in data.notes) {
-    displayData.push(data.notes[key]);
-  }
-  return displayData;
-}
 
 async function readData() {
   return JSON.parse(await readFile('data.json', 'utf8'));
