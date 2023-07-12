@@ -11,7 +11,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What are several examples of static files?
   css, js, html, images
 - What is a good way to serve application images using Express?
-  serve images on demand when the browser needs them instead of loading them all initially
+  put them in one directory, usually called images, and we can serve them by pointing to the directory
 
 ## Notes
 
