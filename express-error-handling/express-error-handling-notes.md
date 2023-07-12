@@ -4,7 +4,11 @@
 
 All student notes should be written here.
 
-How to write `Code Examples` in markdown
+- The errorMiddleware is the error handling function, and Express knows it's an error handling function because it takes 4 parameters (that's it, Express checks the number of paramters to determine if it's error handling)
+- so in next(err), Express goes and find the error handling function in the middleware queue and pass in the err object for error handling
+- errorMiddleware function handles client side and server side errors differently, when it's client side we don't log the error but we will for server side
+
+  How to write `Code Examples` in markdown
 
 for JS:
 
