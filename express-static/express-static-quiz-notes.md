@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the purpose of the Express Static middleware?
   It serves the static files in a directory
 - What does `express.static()` return?
-  a middleware function that can be used to serve static files
+  a middleware function that returns the static file in the http request
 - What are several examples of static files?
   css, js, html, images
 - What is a good way to serve application images using Express?
