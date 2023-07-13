@@ -23,10 +23,10 @@ After completing this exercise, you should be able to discuss or answer the foll
   Declare dependencies in an array as the second argument to the useEffect. Dependecies are used to bypass Effects from being run, if the dependicies have not changed between the new render and the previous render then the useEffect will not run
 
 - Why would you want to clean up from an Effect?
-  so the Effects don't stack up and actions get duplicated
+  So the Effects don't stack up and actions get duplicated
 
 - How do you clean up from an Effect?
-  return a cleanup function in the useEffect
+  Return a cleanup function in the useEffect
 
 - When does the cleanup function run?
   Right before the next time useEffect is triggered or when the component is unmounted
