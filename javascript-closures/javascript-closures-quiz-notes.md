@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - In JavaScript, when is scope determined?
-  At the time the variable is declared
+  At the time the variable is declared (COMPILE time)
 
 - What allows JavaScript functions to "remember" variables from their surroundings?
   closure
@@ -14,13 +14,13 @@ After completing this exercise, you should be able to discuss or answer the foll
   all the variables that are in scope at the time of creation of the function
 
 - When is a closure created?
-  When a function is declared and assigned to a new variable, the function body as well as the closures are stored in the new variable
+  When a function is declared, at RUNTIME a reference will be created to the function and its closures. So everytime the code is run, a new reference is created, this is why we have to be careful in useEffect
 
 - How can you tell if a function will be created with a closure?
-  if a function is returning a another function then a closure will be created
+  if the functoin contains references to variables that are not declared within the function
 
 - In React, what is one important case where you need to know if a closure was created?
-  infinite rerendering, whenever a component rerenders the function/objects declared in the component will be recreated, so if the function/objects are used as dependcies in a useEffect, and the useEffect is setting state or another rerender trigger, then it will start an infinie cycle of rerender from useEffect, useEffect gets triggered due to function/object recreation and changing the dependency and trigger the rerender code, which tirgger useEffects again ....
+  infinite rerendering, whenever a component rerenders the function/objects declared in the component will be recreated, so if the function/objects are used as dependencies in a useEffect, and the useEffect is setting state or another rerender trigger, then it will start an infinie cycle of rerender from useEffect, useEffect gets triggered due to function/object recreation and changing the dependency and trigger the rerender code, which tirgger useEffects again ....
 
 ## Notes
 
