@@ -5,7 +5,11 @@ import NextButton from './NextButton';
 import Indicators from './Indicators';
 import { useState, useEffect } from 'react';
 
-export default function RotatingBanner({ items }) {
+type props = {
+  items: string[],
+};
+
+export default function RotatingBanner({ items }: props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

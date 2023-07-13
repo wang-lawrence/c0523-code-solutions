@@ -1,6 +1,12 @@
 import { FaRegCircle, FaCircle } from 'react-icons/fa';
 
-export default function Indicators({ count, currentIndex, onClick }) {
+type props = {
+  count: Number,
+  currentIndex: Number,
+  onClick: Function,
+};
+
+export default function Indicators({ count, currentIndex, onClick }: props) {
   function makeButtons(count) {
     const buttons = [];
     for (let i = 0; i < count; i++) {
