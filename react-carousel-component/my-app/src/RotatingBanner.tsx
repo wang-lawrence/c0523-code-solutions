@@ -5,11 +5,11 @@ import NextButton from './NextButton';
 import Indicators from './Indicators';
 import { useState, useEffect } from 'react';
 
-type props = {
-  items: string[],
+type Props = {
+  items: string[];
 };
 
-export default function RotatingBanner({ items }: props) {
+export default function RotatingBanner({ items }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function RotatingBanner({ items }: props) {
     setCurrentIndex((currentIndex + 1) % items.length);
   }
 
-  function handleClickIndicators(selIndex) {
+  function handleClickIndicators(selIndex: number) {
     setCurrentIndex(selIndex);
   }
 
