@@ -8,6 +8,7 @@ export default function Todos() {
   const [todos, setTodos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();
+  const [showSpinner, setShowSpinner] = useState(false);
 
   /* Implement useEffect to fetch all todos. Hints are at the bottom of the file. */
   useEffect(() => {
@@ -31,6 +32,7 @@ export default function Todos() {
   /* Implement addTodo to add a new todo. Hints are at the bottom of the file. */
   async function addTodo(newTodo) {
     try {
+      setShowSpinner(true);
       const reqConfig = {
         method: 'POST',
         headers: {
@@ -47,6 +49,8 @@ export default function Todos() {
       setTodos(todosAll);
     } catch (error) {
       setError(error.message);
+    } finally {
+      setShowSpinner(false);
     }
   }
 
@@ -90,7 +94,7 @@ export default function Todos() {
       <div className="row">
         <div className="col pt-5">
           <PageTitle text="Todo App" />
-          <TodoForm onSubmit={addTodo} />
+          <TodoForm onSubmit={addTodo} showSpinner={showSpinner} />
           <TodoList todos={todos} toggleCompleted={toggleCompleted} />
         </div>
       </div>
