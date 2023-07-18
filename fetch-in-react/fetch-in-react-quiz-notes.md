@@ -6,6 +6,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How can `useEffect` be used to load data for a component?
   you can request the data within useEffect so that the reqeust is made once the component is mounted or whenever the dependency changes
+  you don't want to fetch the data everytime the component renders
 
 - What browser function can be used to make HTTP requests to a server in React?
   fetch
