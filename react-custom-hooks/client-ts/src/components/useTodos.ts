@@ -45,7 +45,11 @@ export function useTodos(): UseTodosValues {
      */
     try {
       const newEntry = await createTodo(newTodo);
-      if (todos) setTodos([...todos, newEntry]);
+      if (todos) {
+        setTodos([...todos, newEntry]);
+      } else {
+        setTodos([newEntry]);
+      }
     } catch (error) {
       setError((error as Error).message);
     }
