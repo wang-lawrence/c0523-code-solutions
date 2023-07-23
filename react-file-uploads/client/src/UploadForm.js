@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 export default function UploadForm() {
+  const [url, setUrl] = useState('/images/GitHub logo-1689978809265.png');
   async function handleSubmit(event) {
     /* Prevent the browser's default behavior for form submissions.
      * Create a `new` FormData object from the `event`.
@@ -24,7 +27,9 @@ export default function UploadForm() {
       };
       const res = await fetch('/api/uploads', req);
       if (!res.ok) console.error('Failed to upload image');
-      console.log(await res.json(res));
+      const result = await res.json(res);
+      console.log(result);
+      setUrl(result.url);
     } catch (error) {
       console.error(error);
     }
@@ -61,6 +66,7 @@ export default function UploadForm() {
               </button>
             </div>
           </form>
+          <img src={url} alt=""></img>
         </div>
       </div>
     </div>
