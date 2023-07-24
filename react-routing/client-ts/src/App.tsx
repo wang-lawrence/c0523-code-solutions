@@ -11,10 +11,14 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Header />}>
+        <Route element={<Header />}>
           <Route index element={<Catalog />} />
           <Route path="details/:productId" element={<ProductDetails />} />
-          <Route path="about" element={<About />} />
+          <Route path="about/*" element={<About />}>
+            <Route index element={<p> DEFAULT SON </p>} />
+            <Route path="hi" element={<p> HI </p>} />
+            <Route path="bye" element={<p> BYE </p>} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
